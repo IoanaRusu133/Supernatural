@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Supernatural
+	</title>
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<style>
+	body {
+		background-image: url("images/fundal.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
+	.topnav {
+  		background-color: black;
+  		overflow: hidden;
+	}
+	.topnav a {
+  		float: left;
+  		color: #f2f2f2;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+  		font-size: 17px;
+	}
+
+	.topnav a:hover {
+  		background-color: #ddd;
+  		color: black;
+	}
+
+	.topnav a.active {
+  		background-color: #28274A;
+  		color: white;
+	}
+	body {
+  		font-family:courier;;
+  		font-size: 20px;
+	}
+	#myBtn {
+  		display: none;
+ 		position: fixed;
+  		bottom: 20px;
+  		right: 30px;
+  		z-index: 99;
+  		font-size: 18px;
+  		border: none;
+  		outline: none;
+  		background-color: #28274A;
+  		color: white;
+  		cursor: pointer;
+  		padding: 15px;
+  		border-radius: 4px;
+	}
+	#myBtn:hover {
+  		background-color: #555;
+	}
+	body, html {
+	height:100%;
+	}
+	.hero-image {
+    		background-image: url("images/banner.jpg");
+		height: 70%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+  	}
+	#hp {
+		float: right;
+		margin: 15px 15px 15px 15px; 
+	}
+
+	#hx {
+		float: right;
+		margin: 15px 15px 15px 15px;
+	}
+	.box2 {
+    		background-color: rgba(0,0,0,.5);
+    		color: #fff;
+		margin: 50px;
+	}
+    
+	p {
+  		margin: 15px;
+  		text-indent: 3ch;
+	}
+	p.pilcrow {
+  		text-indent: 0;
+  		display: inline;
+	}
+	p.pilcrow + p.pilcrow::before {
+  		content: " ¶ ";
+	}
+</style>
+<body>
+	<audio controls autoplay loop>
+  		<source src="fisiere/carry_on.mp3" type="audio/mp3">
+	</audio>
+	<button onclick="topFunction()" id="myBtn" title="Intoarce-te la inceputul paginii">
+		Top
+	</button>
+	<script>
+		//pentru buton
+		let mybutton = document.getElementById("myBtn");
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+  		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    		mybutton.style.display = "block";
+  		} else {
+    		mybutton.style.display = "none";
+  		}
+		}
+		function topFunction() {
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+		}
+		//pentru paragrafe
+		document.querySelector('button').addEventListener('click', (event) => {
+  		document.querySelectorAll('p').forEach((paragraph) => {
+    		paragraph.classList.toggle('pilcrow');
+  		});
+		[event.target.innerText, event.target.dataset.toggleText] =
+    		[event.target.dataset.toggleText, event.target.innerText];
+		});
+	</script>
+	<div class="hero-image">
+  		<div class="hero-text">
+  		</div>
+  	</div>  
+	<div class="topnav">
+		<a class="active" href="index.html">Acasa</a>
+		<a href="personaje.html">Personaje</a>
+		<a href="monstrii.html">Monstri</a>
+		<a href="galerie.html">Galerie</a>
+		<a href="contact.html">Contact</a>
+	</div>
+	<div class="wrapper">
+    		<div class="box box2">
+			<h1 style="font-family:courier;" align="center">Supernatural</h1>
+				<img src="images/spnindex.jpg" title="Dean, Sam & Castiel" id="hx" width="400" height="230" ;/>
+				<p style="font-family:Georgia, serif" align="justify";>Supernatural este un serial de televiziune 
+american în genurile fantastic, thriller, de acțiune, de groază. Serialul a fost creat 
+de Eric Kripke și îi are ca protagoniști pe Jared Padalecki în rolul lui Sam Winchester și pe Jensen Ackles în rolul lui Dean Winchester, doi frați care vânează demoni, 
+fantome, monștri și alte personaje paranormale. </p>
+				<p style="font-family:Georgia, serif" align="justify";>Serialul este filmat în principal în Vancouver, Columbia Britanică și în zonele înconjurătoare. A fost în dezvoltare timp de aproape zece ani, deoarece creatorul Kripke a 
+petrecut mai mulți ani fără succes în încercările sale de a-și materializa proiectul.</p>
+				<p style="font-family:Georgia, serif" align="justify";>Până în prezent au fost realizate 15 sezoane. Episodul pilot a fost difuzat pe 13 septembrie 2005 de The WB și a avut o audiență de cca. 5,69 milioane telespectatori, iar
+ rating-urile ridicate ale primelor patru episoade au determinat rețeaua CW să realizeze un întreg prim sezon. Al doilea sezon a avut premiera pe 28 septembrie 2006, iar cel 
+ de-al treilea sezon pe 4 octombrie 2007, deși difuzarea sa a fost întreruptă de greva scenariștilor. Inițial, Kripke a planificat ca acest serial să aibă doar trei sezoane, 
+ dar în cele din urma acesta s-a extins la 13 sezoane.</p>
+				<a href="https://youtu.be/t-775JyzDTk">
+					<img src="images/trailerlink.jpg" title="Vizioneaza trailer-ul" id="hp";/>
+				</a> 
+ 				<p style="font-family:Georgia, serif" align="justify";>Înainte de a intra în faza de producție de televiziune, creatorul Eric Kripke a dezvoltat acest serial aproape zece ani, fiind fascinat de legende urbane încă de când era 
+ un copil. Cu toate că el și-a imaginat Supernatural ca pe un film, a petrecut numeroși ani fără succes în realizarea unui serial TV. </p>
+ 				<p style="font-family:Georgia, serif" align="justify";>Kripke se hotărâse asupra numelor ''Sal'' și ''Dean'' pentru personajele principale ale serialului, ca un omagiu adus nuvelei Pe drum, scrisă de Jack Kerouac. Totuși,
+ ajunse la concluzia că numele ''Sal'' era nepotrivit unui protagonist, așa l-a înlocuit cu ''Sam''. Inițial, se intenționase ca numele de familie al fraților să fie "Harrison",
+ o recunoaștere adresată actorului Harrison Ford, din moment ce Kripke dorea ca Dean să aibă atitudinea nepăsătoare a lui Han Solo. Totuși, s-a dovedit că exista un Sam Harrison
+ în Kansas, așa că numele a necesitat o schimbare. Combinând pasiunea sa pentru Casa Misterioasă din Winchester și dorința de a da serialului un aer de western modern, Kripke s-a 
+ hotărât asupra numelui de familie ''Winchester''. Însă și aceasta s-a dovedit a fi o problemă. Numele tatălui lui Sam și Dean se voia a fi ''Jack'', dar exista un Jack Winchester
+ cu reședința în Kansas, iar Kripke a fost nevoit să schimbe numele personajului în ''John''.</p>
+				<p style="font-family:Georgia, serif" align="justify";>Sezonul unu a fost difuzat în Statele Unite, începând cu 13 septembrie 2005 și s-a încheiat la 4 mai 2006, fiind format din 22 de episoade. Primele 16 episoade au fost difuzate 
+ în zilele de marți, la 9:00, după care serialul a fost reprogramat pentru a fi difuzat în zilele de joi.</p>
+ 				<p style="font-family:Georgia, serif" align="justify";>După moartea mamei lor, într-un incendiu suspect care le-a ars casa, Sam și Dean Winchester au trăit o viață mereu pe drumuri alături de tatăl lor. Anii trec, iar cei doi băieții
+ fac echipă pentru a-l găsi pe tatăl lor, John, care dispare în timpul unei „vânători”. Cu toate acestea, tatăl lor nu este un vânător obișnuit: el vânează creaturi supranaturale, 
+ cum ar fi fantome, vampiri și spirite. De asemenea John și-a instruit fiii să facă același lucru. De-a lungul călătoriei lor, Sam și Dean salvează oameni nevinovați, luptă cu
+ creaturi și fantome și adună indicii privind locul în care se află tatăl lor. Sam începe să dezvolte în mod misterios abilități psihice și are viziuni în timpul călătoriei.
+ Ei îl găsesc în cele din urmă pe tatăl lor, care le arată că monstrul care a ucis-o cu ani în urmă pe mama lor este demonul Azazel (denumit și "Ochi galbeni") și singurul lucru
+ care-l poate ucide este o armă legendară creată de Samuel Colt. Sezonul se încheie cu frații și tatăl lor implicați într-un accident de mașină, atunci când un camion lovește
+ partea din față a autoturismului Impala. Ei se află în interiorul mașinii, acoperiți de sânge și inconștienți.</p>
+				<br>
+
+		</div>
+	</div>
+ 	<hr> 
+	<footer>
+		Copyright &copy; Rusu Ioana 2022-2023
+	</footer>
+</body>
