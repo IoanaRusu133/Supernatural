@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Supernatural
+	</title>
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<style>
+	body {
+		background-image: url("images/fundal.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
+	.topnav {
+  		background-color: black;
+  		overflow: hidden;
+	}
+	.topnav a {
+  		float: left;
+  		color: #f2f2f2;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+  		font-size: 17px;
+	}
+
+	.topnav a:hover {
+  		background-color: #ddd;
+  		color: black;
+	}
+
+	.topnav a.active {
+  		background-color: #28274A;
+  		color: white;
+	}
+	body {
+  		font-family:courier;;
+  		font-size: 20px;
+	}
+	#myBtn {
+  		display: none;
+ 		position: fixed;
+  		bottom: 20px;
+  		right: 30px;
+  		z-index: 99;
+  		font-size: 18px;
+  		border: none;
+  		outline: none;
+  		background-color: #28274A;
+  		color: white;
+  		cursor: pointer;
+  		padding: 15px;
+  		border-radius: 4px;
+	}
+	#myBtn:hover {
+  		background-color: #555;
+	}
+	body, html {
+	height:100%;
+	}
+	.hero-image {
+		background-image: url("images/banner.jpg");
+		height: 70%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	#hp {
+		float: right;
+		margin: 15px 15px 15px 15px;
+	}
+	#hx {
+		float: right;
+		margin: 15px 15px 15px 15px;
+	}
+	#ha {
+		float: right;
+		margin: 15px 15px 15px 15px;
+	}
+	.box2 {
+    		background-color: rgba(0,0,0,.5);
+    		color: #fff;
+		margin: 50px;
+	}
+    
+	p {
+  		margin: 15px;
+  		text-indent: 3ch;
+	}
+	p.pilcrow {
+  		text-indent: 0;
+  		display: inline;
+	}
+	p.pilcrow + p.pilcrow::before {
+  		content: " ¶ ";
+	}
+	h2 {
+		margin: 15px;
+	}
+	h3 {
+		margin: 20px;
+	}
+</style>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Intoarce-te la inceputul paginii">
+		Top
+	</button>
+	<script>
+		//pentru buton
+		let mybutton = document.getElementById("myBtn");
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+  		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    		mybutton.style.display = "block";
+  		} else {
+    		mybutton.style.display = "none";
+  		}
+		}
+		function topFunction() {
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+		}
+		//pentru paragrafe
+		document.querySelector('button').addEventListener('click', (event) => {
+  		document.querySelectorAll('p').forEach((paragraph) => {
+    		paragraph.classList.toggle('pilcrow');
+  		});
+		[event.target.innerText, event.target.dataset.toggleText] =
+    		[event.target.dataset.toggleText, event.target.innerText];
+		});
+	</script>
+	<div class="hero-image">
+		<div class="hero-text">
+		</div>
+	</div>  
+	<div class="topnav">
+		<a href="index.html">Acasa</a>
+		<a href="personaje.html">Personaje</a>
+		<a class="active" href="monstrii.html">Monstri</a>
+		<a href="galerie.html">Galerie</a>
+		<a href="contact.html">Contact</a>
+	</div>
+	<div class="wrapper">
+    	<div class="box box2">
+			<h1 style="font-family:courier;" align="center">Monstri</h1>
+			<p style="font-family:Georgia, serif" align="justify">Universul serialului Supernatural este dominat de o mulțime de creaturi inspirate din diferite legende și povești .</p>
+			<h2  style="font-family:courier;">Vampiri</h2>
+			<p style="font-family:Georgia, serif" align="justify">Vampirii sunt ființe mitologice sau folclorice, care subzistă prin hrănirea în special cu sânge de la creaturi vii, 
+				indiferent dacă sunt strigoi sau persoane în viață. Cu toate că entitățile vampirice au fost înregistrate în multe culturi se crede că vampirii și demonii sunt la
+				fel de vechi ca și omul însuși. Termenul de "vampir" devine popular la începutul secolului al XVIII-lea, după un aflux de superstiții vampirice în Europa de Vest din
+				zonele unde legendele despre vampiri au fost frecvente, cum ar fi Balcani și Europa de Est, deși variante locale au fost, de asemenea, cunoscute sub nume diferite</p>
+			<img src="images/vampir.jpg" title="Vampir" id="hp" width="300" height="150" ;/>
+			<h3 style="font-family:courier;">Concepții privind apariția vampirilor</h3>
+			<p style="font-family:Georgia, serif" align="justify">Cauzele de transformare în vampir au fost numeroase și variate în folclorul original. În slava și tradițiile chineze, orice cadavru
+				care a fost sărit de un animal, în special câine sau pisică, a fost temut să devină unul dintre nemuritori. Un corp cu o rană ce nu a fost tratată cu apă fierbinte era de 
+				asemenea un risc. În folclorul rusesc, vampirii s-au spus că au fost o dată vrăjitoare sau oameni ce s-au răzvrătit împotriva Bisericii în timp ce ei erau în viață. Practicile
+				culturale au apărut de multe ori, pentru a putea preveni transformarea unei persoane iubite într-un vampir. Îngroparea unui cadavru cu susul în jos a fost răspândită, așa cum a 
+				fost plasarea de obiecte pământești, cum ar fi coase sau seceri, lângă mormânt pentru a satisface orice demon care intra în corpul său. În cea mai întâlnită legendă se spune că 
+				primul vampir a fost creat de un demon.</p>
+			<h3 style="font-family:courier;">Metode de protecție</h3>
+			<p style="font-family:Georgia, serif" align="justify">Usturoiul sau apa sfințită sunt obișnuite în folclor. Elementele variază de la o regiune la alta. În Europa, se folosește o ramură 
+				de trandafir și păducel, sau o stropitură cu semințe de muștar pe acoperișul casei îi ține pe aceștia departe. Alte obiecte sunt cele sacre, cum ar fi, de exemplu: un crucifix,
+				rozariul sau apa sfințită.</p>
+			<h2  style="font-family:courier;">Demoni</h2>
+				<img src="images/demon.jpeg" title="Demon" id="hx" width="300" height="200" ;/>
+			<p style="font-family:Georgia, serif" align="justify">Un demon este o entitate supranaturală răuvoitoare . Din punct de vedere istoric, credința în demoni, sau poveștile despre demoni, 
+				apare în religie, ocultism, literatură, ficțiune, mitologie și folclor; precum și în mass-media, cum ar fi benzi desenate, jocuri video, filme și seriale de televiziune.</p>
+			<p style="font-family:Georgia, serif" align="justify">Credința în demoni se întoarce probabil din epoca paleolitică , izvorând din frica umanității de necunoscut.  În religiile antice din Orientul 
+				Apropiat un demon este considerat o entitate spirituală dăunătoare care poate provoca posedarea demonică, solicitând un exorcism. Credința în demoni rămâne o parte importantă a multor
+				religii moderne și tradiții ocultiste. Demonii sunt încă temuți în mare parte din cauza presupusei lor puteri de a poseda creaturi vii.</p>
+			<h2  style="font-family:courier;">Îngeri</h2>
+			<p style="font-family:Georgia, serif" align="justify">Îngerii sunt, în mai multe religii, ființe spirituale pozitive sau negative (îngerii căzuți, în creștinism), ele fiind spirite cu sau fără 
+				corp venite din ceruri. Învățăturile religioase variază între ele, în special la aspectul în care îngerii ori au voință proprie, ori sunt extensii ale voinței supreme ale lui 
+				Dumnezeu. Deși înfățișarea îngerilor diferă, aceștia primesc o înfățișare umană cu aripi.</p>
+			<img src="images/inger.jpg" title="Inger" id="ha" width="300" height="150" ;/>
+			<p style="font-family:Georgia, serif" align="justify">Primii creștini au preluat ideile evreiești referitoare la îngeri. În prima fază, conceptul creștin al unui înger a preschimbat îngerul
+				într-un mesager divin și manifestarea lui Dumnezeu Însuși. Ulterior, mesagerii divini au fost individualizați: Lucifer, Rafael, Gabriel, Michael și Uriel. Apoi, în cursul a 
+				mai mult de două secole (din secolul al III-lea până în secolul al V-lea), imaginea îngerilor a preluat caracteristici definitorii în teologie și în artă.</p>
+			<h2  style="font-family:courier;">Fantome</h2>
+			<p style="font-family:Georgia, serif" align="justify">Fantoma este o ființă ireală, imaginară, pe care cred că o văd, sau pretind că o văd, unii oameni, și care ar reprezenta de obicei duhul 
+				unui mort legat de pământ.</p>
+			<p style="font-family:Georgia, serif" align="justify">În general, stafia reprezintă întruchiparea sufletelor celor morți, diferită însă de strigoi. Stafiile de regulă "bântuie", adică se arată 
+				în locurile în care au trăit în timpul vieții, cel mai adesea fără a interfera cu existența actualilor locuitori, cel mult, speriindu-i. Uneori pot fi văzute (cea mai cunoscută 
+				reprezentare fiind ca o ființă imaterială, dintr-un fel de fum alb), alteori își fac simțită prezența numai prin sunete sau semne (obiecte mutate, luate din loc etc.). Urmările
+				faptelor lor sunt ceea ce este cunoscut sub numele de poltergeist. Pentru a scapa de o stafie trebuie sa arzi si sa arunci cu sare pe ramasitele fizice ale persoanei decedate. 
+				Stafiile nu pot trece de liniile de sare. Daca stai intr-un cerc de sare stafiile nu au cum sa se apropie de tine.</p>
+			<br>
+		</div>
+	</div>
+	<hr>
+	<footer>
+		Copyright &copy; Rusu Ioana 2022-2023
+	</footer>
+</body>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Supernatural
+	</title>
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<style>
+	body {
+		background-image: url("images/fundal.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
+	.topnav {
+  		background-color: black;
+  		overflow: hidden;
+	}
+	.topnav a {
+  		float: left;
+  		color: #f2f2f2;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+  		font-size: 17px;
+	}
+
+	.topnav a:hover {
+  		background-color: #ddd;
+  		color: black;
+	}
+
+	.topnav a.active {
+  		background-color: #28274A;
+  		color: white;
+	}
+	body {
+  		font-family:courier;;
+  		font-size: 20px;
+	}
+	#myBtn {
+  		display: none;
+ 		position: fixed;
+  		bottom: 20px;
+  		right: 30px;
+  		z-index: 99;
+  		font-size: 18px;
+  		border: none;
+  		outline: none;
+  		background-color: #28274A;
+  		color: white;
+  		cursor: pointer;
+  		padding: 15px;
+  		border-radius: 4px;
+	}
+	#myBtn:hover {
+  		background-color: #555;
+	}
+	body, html {
+	height:100%;
+	}
+	.hero-image {
+		background-image: url("images/castiel.jpg");
+		height: 70%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	#hx {
+		float: right;
+		margin: 15px 15px 15px 15px;
+	}
+	.box2 {
+    		background-color: rgba(0,0,0,.5);
+    		color: #fff;
+		margin: 50px;
+	}
+    
+	p {
+  		margin: 15px;
+  		text-indent: 3ch;
+	}
+	p.pilcrow {
+  		text-indent: 0;
+  		display: inline;
+	}
+	p.pilcrow + p.pilcrow::before {
+  		content: " ¶ ";
+	}
+</style>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Intoarce-te la inceputul paginii">
+		Top
+	</button>
+	<script>
+		//pentru buton
+		let mybutton = document.getElementById("myBtn");
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+  		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    		mybutton.style.display = "block";
+  		} else {
+    		mybutton.style.display = "none";
+  		}
+		}
+		function topFunction() {
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+		}
+		//pentru paragrafe
+		document.querySelector('button').addEventListener('click', (event) => {
+  		document.querySelectorAll('p').forEach((paragraph) => {
+    		paragraph.classList.toggle('pilcrow');
+  		});
+		[event.target.innerText, event.target.dataset.toggleText] =
+    		[event.target.dataset.toggleText, event.target.innerText];
+		});
+	</script>
+	<div class="hero-image">
+		<div class="hero-text">
+		</div>
+	</div>  
+	<div class="topnav">
+		<a  href="index.html">Acasa</a>
+		<a href="personaje.html">Personaje</a>
+		<a href="monstrii.html">Monstri</a>
+		<a href="galerie.html">Galerie</a>
+		<a href="contact.html">Contact</a>
+	</div>
+	<div class="wrapper">
+    	<div class="box box2">
+			<h1 style="font-family:courier;" align="center">Castiel</h1>
+			<img src="images/castiel2.jpg" title="Castiel" id="hx" width="500" height="280" ;/>
+			<p style="font-family:Georgia, serif" align="justify">Castiel, adesea poreclit Cas, este un înger puternic care a fost responsabil pentru salvarea lui Dean Winchester din Iad, la comanda arhanghelilor.
+				Treaba lui era să o împiedice pe Lilith să rupă cele 66 de Sigilii care, odată sparte, îl vor elibera pe Lucifer din cușca lui din Infern. Odată ce Castiel a aflat că îngerii doresc să-l
+				elibereze oricum pe Lucifer, el și-a sfidat frații și a murit încercând să-l ajute pe Dean să-l împiedice pe Sam Winchester să spargă ultimul sigiliu.</p>
+			<p style="font-family:Georgia, serif" align="justify">După ce a fost ucis de Arhanghelul Rafael , Castiel a fost înviat de Dumnezeu și s-a alăturat lui Sam, Dean și Bobby.  Odată cu evitarea Apocalipsei,
+				Castiel a fost din nou înviat de Dumnezeu cu noi puteri, devenind serafim. Apoi a început un război civil în Rai pentru a-l împiedica pe Rafael să repornească Apocalipsa.</p>
+			<p style="font-family:Georgia, serif" align="justify">Ca înger , vederea adevăratei forme a lui Castiel va duce la orbire, surditate sau chiar moarte, deoarece forma sa naturale este atât
+				de copleșitoare încât este capabil să ardă ochii oamenilor sau demonilor. Când Castiel devine un serafim, el se descrie lui Samuel Campbell ca o „lungime de undă multidimensională
+				a intenției cerești”. </p>
+			<p style="font-family:Georgia, serif" align="justify">Oamenii îl văd ca fiind un bărbat de înălțime medie, la treizeci de ani. Poartă, un costum negru, o cămașă alba și o cravată albastră, accentuată de un trenci bej.</p>
+			<p style="font-family:Georgia, serif" align="justify">Castiel este o ființă cerească puternică, hotărâtă, impulsivă, competitivă și naivă. La fel ca majoritatea îngerilor, Castiel exprimă puțin sau deloc emoții umane,
+				ceea ce creează defecte și complexități în jurul personajului său. În ciuda acestui fapt, el nu isi arată superioritatea batjocoritoare care pare să caracterizeze îngeri precum Uriel sau Lucifer. 
+				Lipsa lui de emoție și de înțelegere a comportamentului uman, cum ar fi sarcasmul, a dus la mai multe situații hilare de-a lungul spectacolului și, ocazional, i-a creat probleme cu oamenii, 
+				lăsându-l în cele din urmă pe Dean sau Sam să salveze situația. Cu toate acestea, devine prieten apropiat cu frații, care îl încurajează să fie mai amabil, mai grijuliu și mai altruist.</p>
+			<br>
+		</div>
+	</div>
+	<hr>
+	<footer>
+		Copyright &copy; Rusu Ioana 2022-2023
+	</footer>
+</body>

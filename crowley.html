@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Supernatural
+	</title>
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<style>
+	body {
+		background-image: url("images/fundal.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
+	.topnav {
+  		background-color: black;
+  		overflow: hidden;
+	}
+	.topnav a {
+  		float: left;
+  		color: #f2f2f2;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+  		font-size: 17px;
+	}
+
+	.topnav a:hover {
+  		background-color: #ddd;
+  		color: black;
+	}
+
+	.topnav a.active {
+  		background-color: #28274A;
+  		color: white;
+	}
+	body {
+  		font-family:courier;;
+  		font-size: 20px;
+	}
+	#myBtn {
+  		display: none;
+ 		position: fixed;
+  		bottom: 20px;
+  		right: 30px;
+  		z-index: 99;
+  		font-size: 18px;
+  		border: none;
+  		outline: none;
+  		background-color: #28274A;
+  		color: white;
+  		cursor: pointer;
+  		padding: 15px;
+  		border-radius: 4px;
+	}
+	#myBtn:hover {
+  		background-color: #555;
+	}
+	body, html {
+	height:100%;
+	}
+	.hero-image {
+		background-image: url("images/crowley.jpg");
+		height: 70%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	#hx {
+		float: right;
+		margin: 15px 15px 15px 15px;
+	}
+	.box2 {
+    		background-color: rgba(0,0,0,.5);
+    		color: #fff;
+		margin: 50px;
+	}
+    
+	p {
+  		margin: 15px;
+  		text-indent: 3ch;
+	}
+	p.pilcrow {
+  		text-indent: 0;
+  		display: inline;
+	}
+	p.pilcrow + p.pilcrow::before {
+  		content: " ¶ ";
+	}
+</style>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Intoarce-te la inceputul paginii">
+		Top
+	</button>
+	<script>
+		//pentru buton
+		let mybutton = document.getElementById("myBtn");
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+  		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    		mybutton.style.display = "block";
+  		} else {
+    		mybutton.style.display = "none";
+  		}
+		}
+		function topFunction() {
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+		}
+		//pentru paragrafe
+		document.querySelector('button').addEventListener('click', (event) => {
+  		document.querySelectorAll('p').forEach((paragraph) => {
+    		paragraph.classList.toggle('pilcrow');
+  		});
+		[event.target.innerText, event.target.dataset.toggleText] =
+    		[event.target.dataset.toggleText, event.target.innerText];
+		});
+	</script>
+	<div class="hero-image">
+		<div class="hero-text">
+		</div>
+	</div>  
+	<div class="topnav">
+		<a  href="index.html">Acasa</a>
+		<a href="personaje.html">Personaje</a>
+		<a href="monstrii.html">Monstri</a>
+		<a href="galerie.html">Galerie</a>
+		<a href="contact.html">Contact</a>
+	</div>
+	<div class="wrapper">
+    	<div class="box box2">
+			<h1 style="font-family:courier;" align="center">Crowley</h1>
+			<img src="images/crowley2.jpg" title="Crowley" id="hx" width="400" height="400" ;/>
+			<p style="font-family:Georgia, serif" align="justify">Fergus Roderick MacLeod a fost un om , care după moarte a devenit Crowley: un demon puternic care a fost  Regele Iadului,
+				după cea de-a doua blocare a lui Lucifer în Cușca.</p>
+			<p style="font-family:Georgia, serif" align="justify">Rolul lui Crowley se schimbă adesea de la antagonist principal la anti-erou. A fost un anti-erou în sezonul 5, unul dintre 
+				cei trei antagoniști principali din sezonul 6, un anti-erou în sezonul 7, antagonistul principal al sezonului 8 și un anti-erou pentru restul aparițiilor sale. 
+				Cu toate acestea, pe toată durata sa ca anti-erou, el este încă în mod deschis un antagonist, de obicei facând o marsavie care pune în pericol viața fratilor. 
+				În prezent, este unul dintre cei mai longeviv antagonişti din serie, al doilea după Lucifer.</p>
+			<p style="font-family:Georgia, serif" align="justify">Crowley este un om de afaceri eficient și, în timp ce se mândrește cu integritatea sa, va folosi orice mijloc care i se va oferi 
+				pentru a transforma situația în beneficiul lui, dovedind că proverbul „ai grijă ce îți dorești” este mai mult decât adevărat.</p>
+			<p style="font-family:Georgia, serif" align="justify">Crowley este incredibil de narcisist, crezând că puțini, dacă există, sunt egali cu el. Crowley este, de asemenea, priceput în a
+				înșela victimele naive, prin aparenta sa carismatica.</p>
+			<p style="font-family:Georgia, serif" align="justify">Crowley s-a aliat cu Sam și Dean în sezonul 5 împotriva lui Lucifer pentru a obține cu ei inelele celor Patru Călăreți
+				pentru a se proteja, apoi cu Castiel  pentru a obține puterea Purgatoriului și pentru scurt timp cu Rafael. Cu toate acestea, în sezonul 8 , el își reduce 
+				loialitatea față de fratii Winchester și Castiel, căutând răzbunare și încercând să-l captureze pe profetul Kevin Tran.</p>
+			<br>
+		</div>
+	</div>
+	<hr>
+	<footer>
+		Copyright &copy; Rusu Ioana 2022-2023
+	</footer>
+</body>

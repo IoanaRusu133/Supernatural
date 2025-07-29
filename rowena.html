@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Supernatural
+	</title>
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<style>
+	body {
+		background-image: url("images/fundal.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
+	.topnav {
+  		background-color: black;
+  		overflow: hidden;
+	}
+	.topnav a {
+  		float: left;
+  		color: #f2f2f2;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+  		font-size: 17px;
+	}
+
+	.topnav a:hover {
+  		background-color: #ddd;
+  		color: black;
+	}
+
+	.topnav a.active {
+  		background-color: #28274A;
+  		color: white;
+	}
+	body {
+  		font-family:courier;;
+  		font-size: 20px;
+	}
+	#myBtn {
+  		display: none;
+ 		position: fixed;
+  		bottom: 20px;
+  		right: 30px;
+  		z-index: 99;
+  		font-size: 18px;
+  		border: none;
+  		outline: none;
+  		background-color: #28274A;
+  		color: white;
+  		cursor: pointer;
+  		padding: 15px;
+  		border-radius: 4px;
+	}
+	#myBtn:hover {
+  		background-color: #555;
+	}
+	body, html {
+	height:100%;
+	}
+	.hero-image {
+		background-image: url("images/rowena.jpg");
+		height: 70%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	#hx {
+		float: right;
+		margin: 15px 15px 15px 15px;
+	}
+	.box2 {
+    		background-color: rgba(0,0,0,.5);
+    		color: #fff;
+		margin: 50px;
+	}
+    
+	p {
+  		margin: 15px;
+  		text-indent: 3ch;
+	}
+	p.pilcrow {
+  		text-indent: 0;
+  		display: inline;
+	}
+	p.pilcrow + p.pilcrow::before {
+  		content: " ¶ ";
+	}
+</style>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Intoarce-te la inceputul paginii">
+		Top
+	</button>
+	<script>
+		//pentru buton
+		let mybutton = document.getElementById("myBtn");
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+  		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    		mybutton.style.display = "block";
+  		} else {
+    		mybutton.style.display = "none";
+  		}
+		}
+		function topFunction() {
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+		}
+		//pentru paragrafe
+		document.querySelector('button').addEventListener('click', (event) => {
+  		document.querySelectorAll('p').forEach((paragraph) => {
+    		paragraph.classList.toggle('pilcrow');
+  		});
+		[event.target.innerText, event.target.dataset.toggleText] =
+    		[event.target.dataset.toggleText, event.target.innerText];
+		});
+	</script>
+	<div class="hero-image">
+		<div class="hero-text">
+		</div>
+	</div>  
+	<div class="topnav">
+		<a  href="index.html">Acasa</a>
+		<a href="personaje.html">Personaje</a>
+		<a href="monstrii.html">Monstri</a>
+		<a href="galerie.html">Galerie</a>
+		<a href="contact.html">Contact</a>
+	</div>
+	<div class="wrapper">
+    	<div class="box box2">
+			<h1 style="font-family:courier;" align="center">Rowena</h1>
+			<img src="images/rowena2.jpg" title="Rowena" id="hx" width="480" height="300" ;/>
+			<p style="font-family:Georgia, serif" align="justify">Rowena MacLeod a fost o vrăjitoare extrem de puternică și mama lui Crowley, care a fost numit inițial Fergus Roderick MacLeod. 
+				Ea este, de asemenea, bunica lui Gavin MacLeod. Ea este de origine scoțiana si a fost unul dintre principalii antagonişti ai sezonului 10 .</p>
+			<p style="font-family:Georgia, serif">Rowena este o persoană inteligentă, vicleană și extrem de manipulatoare, care se mândrește cu înșelăciunea sa, pe care fiul ei o mosteneste. Rowena
+				are o fire schimbatoare, uneori prezentându-se calmă și politicoasă și apoi brusc vicioasă și violentă atunci când își dezvăluie adevăratele intenții. Ea este excepțional de
+				nemiloasă cu de dușmanii ei, fie că sunt oameni pe care îi detestă sau îi dezaprobă sau cineva care pur și simplu a enervat-o. </p>
+			<p style="font-family:Georgia, serif">Rowena este foarte ambițioasă și crede cu tărie în lupta fără milă și străduința de a câștiga putere de dragul măreției.</p>
+			<p style="font-family:Georgia, serif">Ea pretinde adesea a fi o persoana caldă și dulce pentru a-i manipula pe ceilalti și a le câștiga încrederea. Rowena susține că este 
+				extrem de mândră de fiul ei, Crowley, și regretă că l-a abandonat când era copil. Ea afirmă că l-a părăsit atât pentru siguranța lui, cât și pentru a-și continua cariera în 
+				vrăjitorie, pe care a considerat-o „un mediu neprielnic pentru cresterea unui copil”. Cu toate acestea, este atat de implicata incat nu i-a pasat niciodată de fiul ei în copilărie,
+				aparent încercând chiar să-l vândă pentru porci și abandonându-l pentru a-și putea trăi propriile dorințe egoiste.</p>
+			<p style="font-family:Georgia, serif">În timp ce ea susține că îl iubește pe Crowley și îi reamintește în mod regulat că ei sunt o familie, mai târziu se dezvăluie că ea doar se
+				joacă cu emoțiile lui, folosindu-l pentru a-l manipula și a câștiga controlul asupra lui, astfel încât să se poată folosi de poziția lui de Rege al Iadului.</p>
+			<p style="font-family:Georgia, serif">Deși cu adevărat puternica și talentata, ego-ul ei o face să-și supraestimeze adesea capacitățile, atât magice, cât și manipulatoare.
+				Multe dintre eșecurile ei sunt cauzate de subestimarea adversarilor.</p>
+			<br>
+		</div>
+	</div>	
+	<hr>
+	<footer>
+		Copyright &copy; Rusu Ioana 2022-2023
+	</footer>
+</body>

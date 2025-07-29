@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+	<title>
+		Supernatural
+	</title>
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<style>
+	body {
+		background-image: url("images/fundal.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
+	.topnav {
+  		background-color: black;
+  		overflow: hidden;
+	}
+	.topnav a {
+  		float: left;
+  		color: #f2f2f2;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+  		font-size: 17px;
+	}
+
+	.topnav a:hover {
+  		background-color: #ddd;
+  		color: black;
+	}
+
+	.topnav a.active {
+  		background-color: #28274A;
+  		color: white;
+	}
+	body {
+  		font-family:courier;;
+  		font-size: 20px;
+	}
+	#myBtn {
+  		display: none;
+ 		position: fixed;
+  		bottom: 20px;
+  		right: 30px;
+  		z-index: 99;
+  		font-size: 18px;
+  		border: none;
+  		outline: none;
+  		background-color: #28274A;
+  		color: white;
+  		cursor: pointer;
+  		padding: 15px;
+  		border-radius: 4px;
+	}
+	#myBtn:hover {
+  		background-color: #555;
+	}
+	body, html {
+	height:100%;
+	}
+	.hero-image {
+		background-image: url("images/Dean.jpg");
+		height: 70%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	#hx {
+		float: right;
+		margin: 15px 15px 15px 15px;
+	}
+	.box2 {
+    		background-color: rgba(0,0,0,.5);
+    		color: #fff;
+		margin: 50px;
+	}
+    
+	p {
+  		margin: 15px;
+  		text-indent: 3ch;
+	}
+	p.pilcrow {
+  		text-indent: 0;
+  		display: inline;
+	}
+	p.pilcrow + p.pilcrow::before {
+  		content: " ¶ ";
+	}
+</style>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Intoarce-te la inceputul paginii">
+		Top
+	</button>
+	<script>
+		//pentru buton
+		let mybutton = document.getElementById("myBtn");
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+  		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    		mybutton.style.display = "block";
+  		} else {
+    		mybutton.style.display = "none";
+  		}
+		}
+		function topFunction() {
+  		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
+		}
+		//pentru paragrafe
+		document.querySelector('button').addEventListener('click', (event) => {
+  		document.querySelectorAll('p').forEach((paragraph) => {
+    		paragraph.classList.toggle('pilcrow');
+  		});
+		[event.target.innerText, event.target.dataset.toggleText] =
+    		[event.target.dataset.toggleText, event.target.innerText];
+		});
+	</script>
+	<div class="hero-image">
+		<div class="hero-text">
+		</div>
+	</div>  
+	<div class="topnav">
+		<a  href="index.html">Acasa</a>
+		<a href="personaje.html">Personaje</a>
+		<a href="monstrii.html">Monstri</a>
+		<a href="galerie.html">Galerie</a>
+		<a href="contact.html">Contact</a>
+	</div>
+	<div class="wrapper">
+    	<div class="box box2">
+			<h1 style="font-family:courier;" align="center">Dean Winchester</h1>
+			<img src="images/dean2.png" title="Dean Winchester" id="hx" width="250" height="347" ;/>
+			<p style="font-family:Georgia, serif" align="justify">Dean Winchester este un personaj fictiv și unul dintre cei doi protagoniști ai serialului american Supernatural. El este jucat de 
+				Jensen Ackles. Alte versiuni ale personajului au fost jucate de către Hunter Brochu, Ridge Canipe, Nicolai Lawton Giustra, Brock Kelly, Dylan Everett și Chad Everett.</p>
+			<p style="font-family:Georgia, serif" align="justify">Dean vânează demoni, spirite și alte creaturi supranaturale cu ajutorul fratelui său mai mic, Sam, ocazional cu prietenul lor Bobby Singer (care de altfel ajunge să moară,
+				și apare din nou în sezonul 13, fiind adus dintr-o lume paralelă). </p>
+			<p style="font-family:Georgia, serif" align="justify">Mai târziu, în sezonul al patrulea, acesta se împrietenește cu îngerul Castiel, care este și cel care îl salvează din Infern.</p>
+			<p style="font-family:Georgia, serif" align="justify">Atât el, cât și fratele său Sam au fost antrenați încă de mici de către tatăl lor pentru a vâna creaturi, după ce mama lor a fost omorâtă de către demonul Azazel. Rolul 
+				lui Dean este de a fi protectorul lui Sam, dorința de a-și proteja fratele făcându-l să treacă prin orice obstacol, chiar dacă poate reprezenta propria sa moarte.</p>
+			<p style="font-family:Georgia, serif" align="justify">Dean Winchester, încă din momentul debutului său, s-a dovedit a fi înțelegător, amuzant și, spre deosebire de fratele său mai mic, putin imatur. La o vârstă fragedă, Dean a fost instruit de tatăl său, John Winchester, să vâneze și să omoare creaturi supranaturale. Cu toate acestea, spre deosebire de fratele său Sam, el nu i-a reprosat tatăl său pentru că l-a „crescut ca pe un războinic”. Părea că preferă să vâneze supranaturalul în detrimentul oricărei vieți obișnuite, deși a fost dezvăluit că, atunci când avea șaisprezece ani, de fapt își dorea (sau cel puțin spera) o viață normală.
+				Totuși, acest lucru nu a durat mult, deoarece mai târziu - când încă avea șaisprezece ani - în urma luptei cu un vârcolac , și-a dat seama cât de unică era viața lui</p>
+			<p style="font-family:Georgia, serif" align="justify">Dean este un fan pasionat al muzicii rock clasice. Multe dintre pseudonimele sale au inclus numele unor muzicieni rock celebri.</p>
+			<p style="font-family:Georgia, serif" align="justify">Dean i-a ucis pe cei mai mulți antagoniști principali din serial: Azazel, Dick Roman, Abaddon și Lucifer etc.</p>
+			<br>
+		</div>
+	</div>
+	<hr>
+	<footer>
+		Copyright &copy; Rusu Ioana 2022-2023
+	</footer>
+</body>
