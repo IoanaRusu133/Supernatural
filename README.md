@@ -1,6 +1,6 @@
 # Proiect Atestat Informatică - Serialul "Supernatural"
 
-Acest repository conține proiectul realizat pentru examenul de atestat la informatică (clasa a XII-a). Proiectul este o platformă web dedicată universului serialului "Supernatural".
+Proiect realizat pentru examenul de atestat la informatică (clasa a XII-a) - o platformă web dedicată serialului "Supernatural".
 
 ## 🔗 Link Proiect
 Pagina poate fi accesată online aici: [Supernatural - Website](https://ioanarusu133.github.io/Supernatural/)
